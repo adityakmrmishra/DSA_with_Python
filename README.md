@@ -2,4 +2,4 @@
 ---
 
 
-# This repository is made for those who want to learn DATA STRUCTURE AND ALGORITHMS usig PYTHON 
+ This repository is made for those who want to learn DATA STRUCTURE AND ALGORITHMS usig PYTHON 
