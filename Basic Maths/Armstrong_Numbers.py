@@ -18,6 +18,6 @@ def is_armstrong(n,c):
         x //=10
     return sum == n  # if sum == original no. i.e. n than it is Armstrong Number otherwise not
 
-n= int(input('Enter the number of digits you wish to reverse: '))
+n= int(input('Enter the number: '))
 
 print(is_armstrong(n,count_digits(n)))

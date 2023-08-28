@@ -4,6 +4,7 @@ def InsertionSort(array,n,index):
     j = index
     while j >  0 and array[j-1] > array[j] :
         array[j-1], array[j] = array[j], array[j-1]
+        print(array)
         j-=1
     return InsertionSort(array, n , index+1)
 

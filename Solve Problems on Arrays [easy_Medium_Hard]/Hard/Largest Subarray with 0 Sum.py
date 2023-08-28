@@ -1,6 +1,6 @@
-# Problem Statement: Given an array of integers and an integer k, return the total number of subarrays whose sum equals k.
+# Length of the longest subarray with zero Sum
+# Problem Statement: Given an array containing both positive and negative integers, we have to find the length of the longest subarray with the sum of all elements equal to zero.
 
-# A subarray is a contiguous non-empty sequence of elements within an array
 
 def Longest_Subarray_Sum(a,s):
     dict={}
@@ -12,9 +12,7 @@ def Longest_Subarray_Sum(a,s):
         # if the sum = k, update the maxLen:
         if curr_sum == s:
             maxLen = max(maxLen, i + 1)
-            sa=[a[i] for i in range(0,i)]
-            print("Subarray with sum ",s ,"starts from 0 to ",i,"i.e",sa," and Len is ",maxLen)
-
+            print("Subarray with sum ",s ,"starts from 0 to ",i,"and maxLen is ",maxLen)
         # Calculate the length and update maxLen:
         if curr_sum -s in dict:
             length = i - dict[curr_sum -s]
@@ -24,6 +22,10 @@ def Longest_Subarray_Sum(a,s):
         if curr_sum not in dict: 
             dict[curr_sum] = i
     print()
-s= 10
-array =[2, 3, 5, 1, 9]
+    print("The length of the longest subarray with sum '", s ,"' is :-",maxLen)
+
+
+
+s= 0
+array =[9, -3, 3, -1, 6, -5]
 Longest_Subarray_Sum(array,s)
